@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> html dasar</title>
+</head>
+<body>
+	<a href="dasar_html.html">home</a>
+	<a href="https://github.com/sangno2000/website/blob/main/html.html">git</a>
+	<div><!--membuat data input dalam form,agar tampilan form input terlihat lebih rapi -->
+		<table  cellpadding="8" align="auto" cellspacing="0" style="border-color: orangered;">
+			<form>
+			<tbody><!--table body-->
+			<tr><!--membuat kolom pada table-->
+				<td>
+					<label for="nama" title="Nama lengkap">Nama : </label>
+				</td>
+				<td>
+					<input type="text" name="" id="nama" placeholder="Masukkan nama">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pass">Password :</label>
+				</td>
+				<td>	
+					<input type="password" name="" id="pass" placeholder="Masukkan Password">
+				</td>
+			</tr>
+				<tr align="center"> 
+					<td colspan="3"><label for="gender">Pria</label>
+					<input type="radio" name="Gender" id="gender" value="0">
+					<label for="wanita">Wanita</label>				
+					<input type="radio" name="Gender" id="wanita" value="1">
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="3">
+						<label for="sudah">sudah menikah</label>
+						<input type="checkbox" name="status" id="sudah" value="0">
+						<label for="belum">Belum menikah</label>
+						<input type="checkbox" name="status" id="belum" value="1">
+					</td>
+				</tr>
+				
+				<tr align="center">
+					<td >
+						<strong>Jurusan</strong><!--membuat text dengan font tebal (strong)-->
+					</td>
+					<td>
+						<select>
+							<optgroup label="Tekhnik">
+								<option>Tekhnik informatika</option>
+								<option selected="checked">Tekhnik mesin</option>
+								<option>Tekhnik jadi suami</option>
+							</optgroup>
+							<optgroup label="Administrasi">
+								<option>Management</option>
+								<option>Administrasi perkantoran</option>
+								<option>Administrasi bank</option>
+							</optgroup>
+						</select>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="3">
+						<textarea cols="17" rows="5" placeholder="masukkan komentar terbaik anda di sini,gk sorr maenn!!"></textarea>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="3"><button type="submit">kirim</button></td>
+				</tr>
+				</tbody>
+			</form>
+		</table>
+		<div><!--memasukkan video youtube di html-->
+			<iframe width="420" height="315"
+				src="https://www.youtube.com/embed/TnLC0wtD-dU?autoplay=1&mute=1">
+			</iframe>
+		</div>
+		<div><!-- plugin html dengan element object-->
+			<object height="200" width="300" data="main.html"></object>
+			
+		</div>
+		<div><!--plugin html type embed-->
+			<embed src="latihan2.html">
+		</div>
+
+
+
+		
+	</div>
+		<!--(1)memasukkan gambar pada halaman html, dan atribu yang di gunakan adalah,tittle,alt,height,width(sebaik nya pilih salah satu agar tidak terjadi scratch pada gambar).(title di gunakan untuk memeberikan info teks ketikka kursor di arahkan pada gambar) ,dan alt berguna untuk memberikan teks ketika gambar rusak atau bermasalah .dan jika kita ingin memasukkan link pada gambar agar ketika gambar di klik akan di arahkan ke link yang sudah di tentukan-->
+	<a href="http://facebook.com/hadisucipta">
+	<img src="Apple-grey-icon.png" alt="gambar apple keroak" title="logo brand apple.inc"></a><!--contoh-->
+		<!--(2)membuat table pada html yang kompleks,kita bisa gunakan atribute border,cellspacing,cellpadding,colspan,and rowspan..,(border untuk memeberi border pada table,lalu cellpadding di gunakan untuk memberikan space pada setiap kolom ,sedangkan cellspacing di gunakan untuk memeberikan space atau jarak pada masing-masing kolom.dan sebaik nya atribute ini semua di gunakan pada css bukan pada code html-->
+		<!--contoh-->
+		<table border="10" style=" background-color: aliceblue; color: orangered;" cellspacing="0" cellpadding="10">
+			<thead style="background-color: yellow; color: darkgreen;">  
+				<tr>
+					<th>NAMA</th>
+					<th>PEKERJAAN</th>
+					<th>ALAMAT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Hadi sucipto</td>
+					<td>Karyawan Swasta</td>
+					<td>Dusun 1 desa bogak besar</td>
+				</tr>
+				<tr>
+					<td colspan="2">miranda-Pelajar</td><!--menyatukan 2 column memnjadi 1-->
+					<td>Dusun 1 bogak besar</td>
+				</tr>
+				
+			</tbody>
+
+		</table>
+
+		<table border="2" bgcolor="blue" cellpadding="15" cellspacing="0" style="color: white;">
+			<!--<tr>
+				<td>1,1</td>
+				<td>2,1</td>
+				<td>3,1</td>
+				<td>4,1</td>
+			</tr>
+			<tr>
+				<td>1,2</td>
+				<td>2,2</td>
+				<td>3,2</td>
+				<td>4,2</td>
+			</tr>
+			<tr>
+				<td>1,3</td>
+				<td>2,3</td>
+				<td>3,3</td>
+				<td>4,3</td>
+			</tr>
+			<tr>
+				<td>1,4</td>
+				<td>2,4</td>
+				<td>3,4</td>
+				<td>4,4</td>	
+			</tr>-->
+
+		</table>
+
+
+		<!--membuat tombol submit pada html bisa menngunakan tag (button)-->
+		<button type="submit">kirim</button>
+		<!---->
+		<!---->
+
+
+</body>
+</html>
