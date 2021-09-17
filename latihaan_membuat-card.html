@@ -1,0 +1,175 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>latihan membuat card style</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+		h1 {
+			color: darkgrey;
+			font-family: unset;
+			font-weight: bolder;
+			letter-spacing: 1.1px;
+			font-size: 2em;
+
+		}	
+		.container {
+			border: 2px solid blueviolet;
+			border-radius: 15px;
+			background-color: white;
+			height: 400px;
+			width: 100%;
+
+		}
+		.bungkus {
+			background-image: url(landingpage.jpg);
+			display: flex;
+			height: 400px;
+			text-align: center;
+			justify-content: space-between;
+			overflow-x: scroll;
+			flex-flow: row no-wrap;
+			width: 100%;
+		}
+		.bungkus .card1, .card2, .card3 {
+			background-color: white;
+			border-radius: 13px;
+			width: 200px;
+			margin: 10px 20px;	
+			justify-content: space-between;
+			align-items: stretch;
+			flex-grow: 1;
+		}
+		.bungkus .card1 img, .card2 img, .card3 img  {
+			width: 70px;
+			margin-bottom: 20px;
+
+		}	
+		.bungkus .bening {
+			display: flex;
+		}	
+	</style>		
+</head>
+<body>
+	<h1>Tugas membuat card keren</h1>
+	<div class="container">
+		<h4>Ini Adalah Pembungkus Card</h4>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quae ea quam, officiis nemo, dolore nostrum fugiat libero minus a quos?</p>
+		<div class="bungkus">
+			<div class="bening">
+				<div class="card1"><img src="facebook.png" alt="ini gambar facebook">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, recusandae incidunt optio vitae, qui adipisci quas excepturi laborum dicta sequi.</div>
+
+				<div class="card2"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card2"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card2"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card2"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card3"><img src="whatsapp.png" alt="ini gambar whatsapp">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Voluptatibus porro sequi inventore rem facere numquam, laboriosam blanditiis fugiat minima deserunt.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>latihan membuat card style</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+
+		box-sizing: border-box;
+	}
+	body {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+		h1 {
+			color: darkgrey;
+			font-family: unset;
+			font-weight: bolder;
+			letter-spacing: 1.1px;
+			font-size: 2em;
+
+		}	
+		.container {
+			border: 2px solid black;
+			border-radius: 15px;
+			background-color: white;
+			height: 500px;
+			width: 100%;
+			position: relative;
+			background-color: yellow;
+		}
+		.container .bungkus {
+			background-image: url(landingpage.jpg);
+			width: 100%;
+			position: absolute;
+			top: 90px;
+			border-bottom-right-radius: 15px;
+			border-bottom-left-radius: 15px;
+		}
+		.bening {
+			display: flex;
+			flex-direction: row;
+			background-color: transparent;
+			overflow: auto;
+			width: 100%;
+			padding-bottom: 30px;
+			position: relative;
+
+		
+		}
+		.bening .card1, .card2, .card3, .card4, .card5, .card6 {
+			background-color: white;
+			margin: 10px 20px;
+			opacity: .8;
+			border-radius: 13px;
+			box-shadow: 1px 1px 10px 1px ;
+			flex-shrink: 0;
+			flex-grow: 0;
+			flex-basis: 250px;
+			height: 350px;
+			top: 10px;
+			left: 0px;
+			position: relative;
+		}
+		.bungkus .bening img {
+			width: 80px;
+			height: 80px;
+		}
+	</style>		
+		
+</head>
+<body>
+	<h1>Tugas membuat card keren</h1>
+	<div class="container">
+		<h4>Ini Adalah Pembungkus Card</h4>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quae ea quam, officiis nemo, dolore nostrum fugiat libero minus a quos?</p>
+		<div class="bungkus">
+			<div class="bening">
+				<div class="card1"><img src="facebook.png" alt="ini gambar facebook">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, recusandae incidunt optio vitae, qui adipisci quas excepturi laborum dicta sequi.</div>
+
+				<div class="card2"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card3"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card4"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card5"><img src="instagram.png" alt="ini gambar instagram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, harum numquam neque veniam, labore at nam ea incidunt distinctio mollitia.</div>
+
+				<div class="card6"><img src="whatsapp.png" alt="ini gambar whatsapp">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Voluptatibus porro sequi inventore rem facere numquam, laboriosam blanditiis fugiat minima deserunt.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
